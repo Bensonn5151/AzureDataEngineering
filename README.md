@@ -1,5 +1,8 @@
 **Azure Data Factory ETL Pipeline for Data Migration**
+
 Overview
+
+
 This project showcases a fully functional ETL (Extract, Transform, Load) pipeline built with Azure Data Factory (ADF) for migrating customer, product, and order datasets between Azure Blob Storage containers. The data was generated using Python’s pandas library and processed in parallel pipelines. The solution demonstrates skills in data engineering, cloud integration, pipeline orchestration, and troubleshooting within the Azure ecosystem.
 Architecture
 
@@ -8,6 +11,8 @@ ETL Pipeline: Three parallel Copy Activities in ADF handling customer, product, 
 Sink: Azure Blob Storage containers (v_activity, activity, copy_ac_tivity folders).
 
 **Repository Structure**
+
+
 AzureDataEngineering/
 ├── dataset/              # Dataset JSON configurations
 ├── factory/              # ADF factory configuration
