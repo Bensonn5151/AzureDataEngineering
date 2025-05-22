@@ -3,13 +3,16 @@
 
 Overview
 
+This project showcases a fully functional ETL (Extract, Transform, Load) pipeline built with Azure Data Factory (ADF) for migrating customer, product, and order datasets from Azure Data Lake Storage Gen2 (blob storage) to an Azure SQL Database. The original datasets were generated using Python’s pandas library. The pipeline features parallel copy activities for efficient data ingestion, with table schemas designed and created using Azure Data Studio. This solution demonstrates practical skills in data engineering, cloud integration, pipeline orchestration, and SQL database management within the Azure ecosystem
 
-This project showcases a fully functional ETL (Extract, Transform, Load) pipeline built with Azure Data Factory (ADF) for migrating customer, product, and order datasets between Azure Blob Storage containers. The data was generated using Python’s pandas library and processed in parallel pipelines. The solution demonstrates skills in data engineering, cloud integration, pipeline orchestration, and troubleshooting within the Azure ecosystem.
-Architecture
 
-Source: Azure Blob Storage (customer_data, product_data, order_data files).
-ETL Pipeline: Three parallel Copy Activities in ADF handling customer, product, and order data migration.
-Sink: Azure Blob Storage containers (v_activity, activity, copy_ac_tivity folders).
+
+**Architecture**
+
+Source: CSV files stored in Azure Data Lake Storage Gen2(blob storage containing the data(customer_expanded, product_expanded, order_expanded files)).
+ETL Pipeline: Azure Data Factory Copy Activity moves data from Data Lake to SQL database
+Sink: Sink: Azure SQL Database(relational database for structured data)
+
 
 **Repository Structure**
 
@@ -27,40 +30,35 @@ Sink: Azure Blob Storage containers (v_activity, activity, copy_ac_tivity folder
 └── README.md                # Project documentation
 </code></pre>
 
-Tools & Technologies
+**Tools & Technologies**
 
 **Azure Data Factory (ADF)**
 
 
-Role in the Project:
 Azure Data Factory served as the central orchestration tool for automating and managing the ETL pipeline. It was used to:
 
 Ingest data (CSV files) from Azure Blob Storage.
 Perform schema mapping to align source and destination structures.
-Load the transformed data into target Blob Storage containers (or optionally into Azure SQL Database).
-Support parallel execution of three copy activities for customer, product, and order data.
+Load the transformed data into target (Azure SQL Database).
 Integrate with GitHub for version control of pipeline definitions and configurations.
 
 
 **Azure Blob Storage**
 
+Used primarily to store datasets in containers (customer_expanded.csv, product_expanded.csv, order_expanded.csv). These files serve as the source for the ETL pipeline in ADF. After processing, ADF writes the transformed data back into Blob Storage containers, acting as the sink. Blob Storage’s scalability and easy integration with ADF made it the perfect place to hold and move files during the data migration.
 
-Role in the Project:
-Azure Blob Storage was used as both the source and sink for the ETL pipeline.
 
-Source: Stored raw datasets (customer_data.csv, product_data.csv, order_data.csv) that were ingested by ADF.
-Sink: Target containers received the transformed data after schema mapping via ADF copy activities.
-Blob Storage’s scalability and seamless integration with ADF made it ideal for staging and persisting files during the data migration process.
 
 **Pandas (Python Library)**
 
 
-Role in the Project:
 Pandas was used for the initial data generation and preprocessing before the files were uploaded to Azure Blob Storage.
 
 Created structured data for customer, product, and order datasets.
 Applied custom logic and formatting to simulate realistic business data for ETL processing.
 Exported the final DataFrames as .csv files which were later ingested by ADF.
+
+
 
 **Azure SQL Database**
 
@@ -79,6 +77,7 @@ Future Integration Plans:
 Create staging tables in Azure SQL for each dataset.
 Add new Copy Activities in ADF to move data from Blob Storage to SQL tables.
 Use Stored Procedures or Mapping Data Flows for transformation.
+
 
 
 **Azure Data Studio**
