@@ -1,3 +1,4 @@
+![workflow_schema drawio](https://github.com/user-attachments/assets/9883f603-225a-49da-b5af-e4d60cb9d0c8)
 **Azure Data Factory ETL Pipeline for Data Migration**
 
 Overview
