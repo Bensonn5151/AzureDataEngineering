@@ -29,6 +29,8 @@ Sink: Azure Blob Storage containers (v_activity, activity, copy_ac_tivity folder
 Tools & Technologies
 
 **Azure Data Factory (ADF)**
+
+
 Role in the Project:
 Azure Data Factory served as the central orchestration tool for automating and managing the ETL pipeline. It was used to:
 
@@ -40,6 +42,8 @@ Integrate with GitHub for version control of pipeline definitions and configurat
 
 
 **Azure Blob Storage**
+
+
 Role in the Project:
 Azure Blob Storage was used as both the source and sink for the ETL pipeline.
 
@@ -48,6 +52,8 @@ Sink: Target containers received the transformed data after schema mapping via A
 Blob Storage’s scalability and seamless integration with ADF made it ideal for staging and persisting files during the data migration process.
 
 **Pandas (Python Library)**
+
+
 Role in the Project:
 Pandas was used for the initial data generation and preprocessing before the files were uploaded to Azure Blob Storage.
 
@@ -56,6 +62,8 @@ Applied custom logic and formatting to simulate realistic business data for ETL 
 Exported the final DataFrames as .csv files which were later ingested by ADF.
 
 **Azure SQL Database**
+
+
 Overview: Azure SQL Database is a fully managed relational database service built on SQL Server. It provides high performance, scalability, and built-in intelligence, making it a preferred choice for storing structured data in the cloud.
 
 Role in the Project:
@@ -72,6 +80,8 @@ Add new Copy Activities in ADF to move data from Blob Storage to SQL tables.
 Use Stored Procedures or Mapping Data Flows for transformation.
 
 **Azure Data Studio**
+
+
 Overview: Azure Data Studio is a cross-platform, lightweight SQL editor developed by Microsoft. It supports connections to Azure SQL Database and comes with features like:
 
 IntelliSense for SQL queries.
