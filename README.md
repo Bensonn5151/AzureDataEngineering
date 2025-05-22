@@ -13,7 +13,18 @@ Sink: Azure Blob Storage containers (v_activity, activity, copy_ac_tivity folder
 **Repository Structure**
 
 
-<pre><code> AzureDataEngineering/ ├── dataset/ # Dataset JSON configurations ├── factory/ # ADF factory configuration ├── linked_service/ # Linked Service JSONs (Blob Storage configs) ├── pipeline/ # Main pipeline JSON with Copy Activities ├── docs/ # Screenshots and visuals │ ├── pipeline-overview.png │ ├── blob-storage-config.png │ └── pipeline-run.png ├── publish_config.json # ADF publishing config └── README.md # Project documentation </code></pre>
+<pre><code> AzureDataEngineering/
+├── dataset/                 # Dataset JSON configurations
+├── factory/                 # ADF factory configuration
+├── linked_service/          # Linked Service JSONs (Blob Storage configs)
+├── pipeline/                # Main pipeline JSON with Copy Activities
+├── docs/                    # Screenshots and visuals
+│   ├── pipeline-overview.png
+│   ├── blob-storage-config.png
+│   └── pipeline-run.png
+├── publish_config.json      # ADF publishing config
+└── README.md                # Project documentation
+</code></pre>
 
 Tools & Technologies
 
