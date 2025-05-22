@@ -1,3 +1,4 @@
+![workflow_schema](https://github.com/user-attachments/assets/fe106090-6fbb-47f8-9b23-8f7f293bf5bd)
 
 **Azure Data Factory ETL Pipeline for Data Migration**
 
@@ -100,6 +101,7 @@ Inspect the data after it's loaded into Azure SQL.
 Write, run, and save SQL queries.
 Monitor and troubleshoot ETL runs through query performance stats.
 Version SQL scripts alongside your pipeline JSONs.
+
 
 
 
