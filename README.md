@@ -110,7 +110,7 @@ Version SQL scripts alongside your pipeline JSONs.
 ![workflow_schema](https://github.com/user-attachments/assets/4e879f2b-1af6-4d68-b74a-29debab57af5)
 
 
-
+![description](docs/workflow_schema.png)
 
 
 
