@@ -79,6 +79,7 @@ Future Integration Plans:
 Create staging tables in Azure SQL for each dataset.
 Add new Copy Activities in ADF to move data from Blob Storage to SQL tables.
 Use Stored Procedures or Mapping Data Flows for transformation.
+![workflow_schema drawio](https://github.com/user-attachments/assets/38f791fc-d31b-4fcb-af32-71a293ff8fe8)
 
 **Azure Data Studio**
 
@@ -96,6 +97,13 @@ Inspect the data after it's loaded into Azure SQL.
 Write, run, and save SQL queries.
 Monitor and troubleshoot ETL runs through query performance stats.
 Version SQL scripts alongside your pipeline JSONs.
+
+
+
+
+
+![workflow_schema](https://github.com/user-attachments/assets/b3fba302-7b45-4f36-be07-e7d48f2404e5)
+
 
 
 
