@@ -1,0 +1,9 @@
+{
+	"name": "Myfirstjob4000",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5d990ea4-ab3c-4707-8fe1-48d1120666cd",
+		"tenantId": "91d546d3-28cc-448c-9554-18a92528c07b"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "products_expanded_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServiceforSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Products"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
