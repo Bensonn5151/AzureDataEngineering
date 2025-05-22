@@ -102,6 +102,7 @@ Version SQL scripts alongside your pipeline JSONs.
 
 
 
+
 ![workflow_schema](docs/workflow_schema.png)
 
 
