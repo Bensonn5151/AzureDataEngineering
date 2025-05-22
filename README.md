@@ -23,9 +23,13 @@ Sink: Sink: Azure SQL Database(relational database for structured data)
 ├── linked_service/          # Linked Service JSONs (Blob Storage configs)
 ├── pipeline/                # Main pipeline JSON with Copy Activities
 ├── docs/                    # Screenshots and visuals
+│   ├── Azure Data Lake.png
+│   ├── Azure Data Studio.png
+│   ├── LinkedService.png
 │   ├── pipeline-overview.png
-│   ├── blob-storage-config.png
-│   └── pipeline-run.png
+│   ├── python_dataset.png
+│   ├── python_dataset2.png
+│   └── qorkflow_schema.png
 ├── publish_config.json      # ADF publishing config
 └── README.md                # Project documentation
 </code></pre>
