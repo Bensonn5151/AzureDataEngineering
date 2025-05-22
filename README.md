@@ -1,4 +1,4 @@
-![workflow_schema drawio](https://github.com/user-attachments/assets/9883f603-225a-49da-b5af-e4d60cb9d0c8)
+
 **Azure Data Factory ETL Pipeline for Data Migration**
 
 Overview
@@ -102,7 +102,7 @@ Version SQL scripts alongside your pipeline JSONs.
 
 
 
-![workflow_schema](https://github.com/user-attachments/assets/b3fba302-7b45-4f36-be07-e7d48f2404e5)
+![workflow_schema](docs/workflow_schema.png)
 
 
 
